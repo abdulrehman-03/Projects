@@ -13,17 +13,17 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 password = ""
 
-for letter in range(0, nr_letters + 1):
-  i = random.randint(0, len(letters) - 1)
-  password = password + letters[i]
+for char in range(0, nr_letters + 1):
+  rnd_char = random.choice(letters)
+  password = password + rnd_char
 
 for symbol in range(0, nr_symbols + 1):
-  j = random.randint(0, len(symbols) - 1)
-  password = password + symbols[j]
+  rnd_symbol = random.choice(symbols)
+  password = password + rnd_symbol
 
 for number in range(0, nr_numbers + 1):
-  k = random.randint(0, len(numbers) - 1)
-  password = password + numbers[k]
+  rnd_num = random.choice(numbers)
+  password = password + rnd_num
 
 shuffled = list(password)
 random.shuffle(shuffled)
