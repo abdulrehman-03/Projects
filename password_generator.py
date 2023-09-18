@@ -15,15 +15,15 @@ password = ""
 
 for char in range(0, nr_letters + 1):
   rnd_char = random.choice(letters)
-  password = password + rnd_char
+  password += rnd_char
 
 for symbol in range(0, nr_symbols + 1):
   rnd_symbol = random.choice(symbols)
-  password = password + rnd_symbol
+  password += rnd_symbol
 
 for number in range(0, nr_numbers + 1):
   rnd_num = random.choice(numbers)
-  password = password + rnd_num
+  password += rnd_num
 
 shuffled = list(password)
 random.shuffle(shuffled)
